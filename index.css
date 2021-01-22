@@ -1,0 +1,168 @@
+body {
+    background: #EEF2F7;
+    font-family: Arial;
+  }
+  
+  input[type=text],input[type=date],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn{
+    height: 50px;
+    background-color: #1c1d1c;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    padding: 20px;
+    margin: 8px;
+    display: inline;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* input[type=submit]:hover {
+    background-color: #45a049;
+  } */
+  
+  div.container1 {
+    width: 50%;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+    ;
+    margin:50px auto;
+    background: white;
+    border-radius: 5px;
+    background-color: #cccaca;
+    padding: 20px;
+  }
+
+.container{
+  width: 20%;
+  /* min-height: 100vh;   */
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* background-color: lawngreen; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+/* .center{
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+} */
+
+.card{
+  background-color: white;
+  width: 250px;
+  /* border: 1px solid black; */
+  /* min-height: 250px * 1.618; */
+  
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+/* -webkit-box-shadow: -20px -20px 0px 0px lighten(salmon, 5%); */
+  
+  box-shadow: -20px -20px 0px 0px lighten(salmon, 5%);
+  border-radius: 10px;
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+  -o-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+  transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000); /* custom */
+}
+  
+  h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: #282828;
+  }
+
+  hr{
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: salmon;
+    margin: 0px;
+    animation-name: line-show;
+    animation-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+    transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000); /* custom */
+  }
+  
+  p{
+    margin: 15px 0px 0px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    letter-spacing: -0.25px;
+    line-height: 1.25;
+    font-size: 16px;
+    word-break: break-all;
+    word-wrap: pre-wrap;
+    color: #282828;
+    text-align: justify;
+    animation-name: p-show;
+    animation-duration: 1.5s;
+  }
+  
+  .Edit_btn{
+    border: none;
+    background-color: salmon;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+/* Standard syntax */
+@keyframes line-show {
+  from {margin: 0px 100px;}
+  to {margin: 0px;}
+}
+
+/* Standard syntax */
+@keyframes p-show {
+  from {color: white;}
+  to {color: #282828;}
+}
+
+/* Standard syntax */
+@keyframes shadow-show {
+  from {-webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;box-shadow: 0px 0px 0px 0px #e0e0e0;}
+  to {-webkit-box-shadow: -20px -20px 0px 0px lighten(salmon, 5%);box-shadow: -20px -20px 0px 0px lighten(salmon, 5%);}
+}
